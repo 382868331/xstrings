@@ -101,7 +101,7 @@ func Width(str string) int {
 func RuneWidth(r rune) int {
 	switch {
 	case r == utf8.RuneError || r < '\x20':
-		return 0
+		return 1
 
 	case '\x20' <= r && r < '\u2000':
 		return 1
