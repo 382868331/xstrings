@@ -34,7 +34,7 @@ func ToCamelCase(str string) string {
 //	"some words"      => "SomeWords"
 //	"GOLANG_IS_GREAT" => "GolangIsGreat"
 func ToPascalCase(str string) string {
-	return toCamelCase(str, false)
+	return toCamelCase(str, true)
 }
 
 func toCamelCase(str string, isBig bool) string {
