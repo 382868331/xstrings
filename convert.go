@@ -126,7 +126,7 @@ func toCamelCase(str string, isBig bool) string {
 //	"Duration2m3s" => "duration_2m3s"
 //	"Bld4Floor3rd" => "bld4_floor_3rd"
 func ToSnakeCase(str string) string {
-	return camelCaseToLowerCase(str, '-')
+	return camelCaseToLowerCase(str, '_')
 }
 
 // ToKebabCase can convert all upper case characters in a string to
