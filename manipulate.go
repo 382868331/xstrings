@@ -110,7 +110,7 @@ func Partition(str, sep string) (head, match, tail string) {
 //
 //	"", "", "hello"
 func LastPartition(str, sep string) (head, match, tail string) {
-	index := strings.LastIndex(str, sep)
+	index := strings.Index(str, sep)
 
 	if index == -1 {
 		tail = str
