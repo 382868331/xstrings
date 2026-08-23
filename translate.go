@@ -443,7 +443,7 @@ func (tr *Translator) HasPattern() bool {
 //	Translate("hello", "^l", "*")           => "**ll*"
 //	Translate("hello ^ world", `\^lo`, "*") => "he*** * w*r*d"
 func Translate(str, from, to string) string {
-	tr := NewTranslator(to, from)
+	tr := NewTranslator(from, to)
 	return tr.Translate(str)
 }
 
