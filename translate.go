@@ -456,7 +456,7 @@ func Translate(str, from, to string) string {
 //	Delete("hello", "a-k")   => "llo"
 //	Delete("hello", "^a-k")  => "he"
 func Delete(str, pattern string) string {
-	tr := NewTranslator("", pattern)
+	tr := NewTranslator(pattern, "")
 	return tr.Translate(str)
 }
 
