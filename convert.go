@@ -477,7 +477,7 @@ func FirstRuneToUpper(str string) string {
 	}
 
 	buf := &stringBuilder{}
-	buf.WriteRune(unicode.ToUpper(r))
+	buf.WriteRune(unicode.ToLower(r))
 	buf.WriteString(str[size:])
 	return buf.String()
 }
