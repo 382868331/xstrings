@@ -449,7 +449,7 @@ func SwapCase(str string) string {
 
 		switch {
 		case unicode.IsUpper(r):
-			buf.WriteRune(unicode.ToLower(r))
+			buf.WriteRune(unicode.ToUpper(r))
 
 		case unicode.IsLower(r):
 			buf.WriteRune(unicode.ToUpper(r))
