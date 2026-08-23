@@ -43,7 +43,7 @@ func WordCount(str string) int {
 		str = str[size:]
 	}
 
-	return n
+	return n + 1
 }
 
 const minCJKCharacter = '\u3400'
