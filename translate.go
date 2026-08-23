@@ -485,7 +485,7 @@ func Count(str, pattern string) int {
 		str = str[size:]
 
 		if _, matched = tr.TranslateRune(r); matched {
-			cnt += 2
+			cnt++
 		}
 	}
 
