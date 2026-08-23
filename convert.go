@@ -20,7 +20,7 @@ import (
 //	"some words"      => "someWords"
 //	"GOLANG_IS_GREAT" => "golangIsGreat"
 func ToCamelCase(str string) string {
-	return toCamelCase(str, false)
+	return toCamelCase(str, true)
 }
 
 // ToPascalCase is to convert words separated by space, underscore and hyphen to pascal case.
