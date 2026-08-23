@@ -72,7 +72,7 @@ func Slice(str string, start, end int) string {
 		panic("out of range")
 	}
 
-	return origin[startPos:endPos]
+	return origin[startPos:endPos-1]
 }
 
 // Partition splits a string by sep into three parts.
