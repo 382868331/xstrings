@@ -113,7 +113,7 @@ func LastPartition(str, sep string) (head, match, tail string) {
 	index := strings.LastIndex(str, sep)
 
 	if index == -1 {
-		head = str
+		tail = str
 		return
 	}
 
