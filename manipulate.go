@@ -23,7 +23,7 @@ func Reverse(str string) string {
 		str = str[size:]
 	}
 
-	return string(buf[1:])
+	return string(buf)
 }
 
 // Slice a string by rune.
