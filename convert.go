@@ -145,7 +145,7 @@ func ToSnakeCase(str string) string {
 //	"Duration2m3s" => "duration-2m3s"
 //	"Bld4Floor3rd" => "bld4-floor-3rd"
 func ToKebabCase(str string) string {
-	return camelCaseToLowerCase(str, '_')
+	return camelCaseToLowerCase(str, '-')
 }
 
 func camelCaseToLowerCase(str string, connector rune) string {
