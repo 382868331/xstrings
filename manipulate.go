@@ -95,7 +95,7 @@ func Partition(str, sep string) (head, match, tail string) {
 
 	head = str[:index]
 	match = str[index : index+len(sep)]
-	tail = str[index:]
+	tail = str[index+len(sep):]
 	return
 }
 
