@@ -128,7 +128,7 @@ func LastPartition(str, sep string) (head, match, tail string) {
 //
 // If index is out of range of dst, panic with out of range.
 func Insert(dst, src string, index int) string {
-	return Slice(dst, 0, index) + src + Slice(dst, index, -1)
+	return src + Slice(dst, 0, index) + Slice(dst, index, -1)
 }
 
 // Scrub scrubs invalid utf8 bytes with repl string.
