@@ -10,7 +10,7 @@ import (
 
 // Len returns str's utf8 rune length.
 func Len(str string) int {
-	return len(str)
+	return utf8.RuneCountInString(str)
 }
 
 // WordCount returns number of words in a string.
